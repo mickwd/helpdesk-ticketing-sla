@@ -1,0 +1,72 @@
+title,description,category,specialty
+"No puedo ingresar, me dice usuario bloqueado",Intenté varias veces con mi contraseña y ahora Windows me dice que la cuenta está bloqueada.,acceso_cuentas,windows
+Olvidé mi contraseña del dominio,Volví de vacaciones y no recuerdo la clave. Necesito blanqueo para entrar a la PC.,acceso_cuentas,windows
+Contraseña vencida en el correo del celular,El celular me pide la contraseña del mail todo el tiempo desde que la cambié.,correo,aplicaciones
+La VPN no conecta desde mi casa,FortiClient queda en 98% y después da error de credenciales. Ayer funcionaba.,red_conectividad,redes
+VPN se desconecta cada 10 minutos,"Trabajo remoto y la VPN se corta seguido, pierdo las sesiones del ERP.",red_conectividad,redes
+No resuelve nombres internos,"Desde la sucursal Rosario no resuelve intranet.empresa.local, nslookup da timeout.",red_conectividad,redes
+Sin internet en todo el piso 3,Ninguna PC del piso 3 tiene red desde las 10. Los teléfonos IP tampoco andan.,red_conectividad,redes
+WiFi de la sala de reuniones muy lento,"En la sala grande el wifi anda muy lento, las videollamadas se cortan.",red_conectividad,redes
+Latencia alta hacia el datacenter,Desde las sucursales hay latencia de 300 ms hacia los servidores del datacenter.,red_conectividad,redes
+IP duplicada en la red de administración,Aparece un aviso de conflicto de IP en varias PCs de administración.,red_conectividad,redes
+Base de datos de facturación muy lenta,Las consultas del sistema de facturación tardan más de un minuto desde esta mañana.,base_de_datos,bases_de_datos
+Deadlocks en SQL Server del ERP,El ERP muestra errores de deadlock al cerrar pedidos en horario pico.,base_de_datos,bases_de_datos
+Falló el backup nocturno de la base de datos,El reporte de backups indica que el job de la base de clientes falló anoche.,base_de_datos,bases_de_datos
+Pedido de acceso de lectura a la base de reportes,Necesito usuario de solo lectura en la base de reportes para armar tableros.,otro,aplicaciones
+Servidor Linux de aplicaciones con disco lleno,El servidor app-02 (Ubuntu) avisa disco lleno en /var y la aplicación no levanta.,servidores,linux
+Servicio nginx no levanta después del reinicio,"Tras el reinicio programado, systemd muestra nginx en estado failed.",servidores,linux
+No puedo entrar por SSH al servidor de integración,"Al conectar por ssh me rechaza la clave pública, antes funcionaba.",servidores,linux
+Tarea cron de exportación no se ejecuta,La exportación diaria de pedidos que corre por cron no generó el archivo hoy.,servidores,linux
+Escritorio remoto al servidor de contabilidad no responde,No puedo conectarme por RDP al servidor Windows Server de contabilidad.,servidores,windows
+Outlook no sincroniza el correo,Outlook queda en 'desconectado' y no recibo correos desde ayer.,correo,aplicaciones
+Buzón de correo lleno,Me llegó un aviso de que el buzón está lleno y no puedo enviar correos.,correo,aplicaciones
+No llegan correos externos a ventas,Los clientes dicen que los mails a ventas@ rebotan desde hoy.,correo,aplicaciones
+Impresora de recepción no imprime,La impresora de recepción tiene trabajos en cola pero no imprime nada.,impresion,windows
+Escáner no envía a la carpeta compartida,El escáner del piso 2 da error al escanear a carpeta.,acceso_cuentas,windows
+Notebook no enciende,"Mi notebook no prende, la luz de carga no se enciende.",hardware,windows
+Pantalla azul al iniciar Windows,Desde la actualización de ayer la PC muestra pantalla azul al iniciar.,hardware,windows
+Pedido de segundo monitor,Solicito un segundo monitor para el puesto de análisis de datos.,hardware,windows
+Error 500 en el portal de clientes,El portal de clientes muestra error 500 al querer descargar facturas.,software,aplicaciones
+No puedo instalar el software de diseño,Necesito instalar la aplicación de diseño pero me pide permisos de administrador.,software,aplicaciones
+Licencia de Office vencida,Word dice que el producto no tiene licencia y no me deja editar.,software,aplicaciones
+El CRM no guarda los cambios de contactos,Al editar un contacto en el CRM aparece un mensaje de error y no guarda.,software,aplicaciones
+Sistema de facturación no emite comprobantes,El sistema de facturación da error al autorizar comprobantes electrónicos.,software,aplicaciones
+Pedido de acceso a carpeta compartida de RRHH,Necesito permiso de lectura en la carpeta compartida de Recursos Humanos.,acceso_cuentas,windows
+Acceso denegado a la unidad de red de proyectos,Desde hoy me da acceso denegado al abrir la unidad P: de proyectos.,acceso_cuentas,windows
+Firewall bloquea la aplicación del proveedor,"La aplicación del proveedor logístico no conecta, creemos que el firewall la bloquea.",red_conectividad,redes
+Consulta lenta en el reporte mensual,El reporte mensual de ventas tarda 20 minutos en generarse.,base_de_datos,bases_de_datos
+Teclado y mouse inalámbricos no responden,El teclado y el mouse inalámbricos dejaron de funcionar.,hardware,windows
+Calendario compartido no muestra reuniones,No veo las reuniones del calendario compartido del equipo comercial.,correo,aplicaciones
+Controlador de dominio con replicación fallida,El monitoreo marca errores de replicación entre los controladores de dominio.,servidores,windows
+Consulta sobre cómo compartir pantalla en videollamada,No sé cómo compartir una sola ventana en la herramienta de videollamadas.,otro,aplicaciones
+La pc no arranca y hace pitidos,Al prender la computadora hace tres pitidos y no da imagen,hardware,windows
+Se rompió el cargador,El cargador de la laptop dejó de funcionar,hardware,windows
+Necesito un headset,Pido auriculares con micrófono para atención telefónica,hardware,windows
+La computadora está muy lenta,La PC tarda mucho en abrir programas y se tilda,hardware,windows
+Webcam no detectada,La cámara de la laptop no aparece en las videollamadas,hardware,windows
+No tengo conexión a la red cableada,El cable de red está conectado pero no tengo conexión,red_conectividad,redes
+Se cae la conexión del local,En el local de ventas se corta la conexión varias veces por día,red_conectividad,redes
+Página interna no carga,La intranet no carga desde la oficina pero sí desde el celular,red_conectividad,redes
+Router de la sucursal reiniciándose,El router de la sucursal Córdoba se reinicia solo,red_conectividad,redes
+Cambiar mi clave de acceso,Quiero cambiar mi clave porque creo que alguien la vio,acceso_cuentas,windows
+Alta de usuario para ingresante,"Ingresa una persona nueva el lunes, necesita usuario y correo",acceso_cuentas,windows
+Baja de usuario por desvinculación,Dar de baja los accesos de un empleado desvinculado,acceso_cuentas,windows
+No me deja iniciar sesión,Al iniciar sesión me dice que el nombre de usuario es incorrecto,acceso_cuentas,windows
+Tabla con registros duplicados,En la tabla de clientes aparecen registros duplicados después de la migración,base_de_datos,bases_de_datos
+Restaurar datos borrados,"Se borraron por error registros de pedidos, necesitamos restaurarlos",base_de_datos,bases_de_datos
+Replicación de la base atrasada,La réplica de lectura tiene varias horas de atraso,base_de_datos,bases_de_datos
+Error de conexión a la base desde la app,La aplicación da too many connections al conectarse,base_de_datos,bases_de_datos
+Servidor con uso de CPU al 100%,El servidor de reportes está con CPU al máximo hace una hora,servidores,linux
+Certificado SSL del sitio por vencer,El certificado del sitio web vence la semana que viene,servidores,linux
+Contenedor docker reiniciándose,El contenedor del servicio de pagos se reinicia en loop,servidores,linux
+Actualización de parches del servidor,Programar la aplicación de parches de seguridad del servidor,servidores,linux
+Reenvío de mensajes a otra casilla,Necesito reenviar mis mensajes a la casilla de mi reemplazo durante la licencia,correo,aplicaciones
+Recibo mucho spam,Me llegan muchos mensajes de spam y phishing,correo,aplicaciones
+Lista de distribución nueva,Crear una lista de distribución para el equipo de logística,correo,aplicaciones
+La fotocopiadora atasca hojas,La fotocopiadora del segundo piso atasca papel constantemente,impresion,windows
+Agregar impresora nueva en mi PC,Quiero agregar la nueva multifunción en mi computadora,impresion,windows
+El programa se cierra solo,El programa de stock se cierra solo cuando genero el remito,software,aplicaciones
+Actualizar versión del navegador,El navegador está desactualizado y la web del banco no funciona,software,aplicaciones
+Macro de Excel no funciona,La planilla con macros dejó de funcionar después de la actualización,software,aplicaciones
+Consulta general sobre el uso del portal,Tengo una duda sobre cómo cargar las horas en el portal,otro,aplicaciones
+Pedido de capacitación,Solicitamos una capacitación sobre el uso de las herramientas colaborativas,otro,aplicaciones

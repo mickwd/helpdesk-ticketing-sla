@@ -1,0 +1,2 @@
+# Opcional: habilita el clasificador TF-IDF + LogisticRegression
+scikit-learn>=1.5

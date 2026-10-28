@@ -1,0 +1,174 @@
+# Reglas de clasificación automática.
+# El texto (título + descripción) se normaliza a minúsculas y sin tildes antes de
+# evaluar, por eso los patrones se escriben sin acentos. Son expresiones regulares.
+# Cada coincidencia suma 1 punto (2 si aparece en el título); gana la regla con más
+# puntos y, ante empate, la que aparece primero en la lista.
+
+default:
+  category: otro
+  specialty: aplicaciones
+  level: N1
+
+rules:
+  - name: reset_contrasena
+    description: Blanqueo de contraseña o cuenta bloqueada
+    patterns:
+      - 'contrasena'
+      - 'password'
+      - '\bclave\b'
+      - 'bloquead[oa]'
+      - 'desbloque'
+      - 'blanqueo'
+      - 'olvide'
+    category: acceso_cuentas
+    specialty: windows
+    level: N1
+
+  - name: permisos_carpetas
+    description: Accesos a carpetas compartidas o grupos de AD
+    patterns:
+      - 'permiso'
+      - 'carpeta compartida'
+      - 'acceso denegado'
+      - 'active directory'
+      - '\bgpo\b'
+    category: acceso_cuentas
+    specialty: windows
+    level: N1
+
+  - name: vpn
+    description: Problemas de conexión a la VPN corporativa
+    patterns:
+      - '\bvpn\b'
+      - 'forticlient'
+      - 'anyconnect'
+      - 'globalprotect'
+    category: red_conectividad
+    specialty: redes
+    level: N1
+
+  - name: dns_dhcp
+    description: Resolución de nombres o direccionamiento
+    patterns:
+      - '\bdns\b'
+      - '\bdhcp\b'
+      - 'no resuelve'
+      - 'nslookup'
+      - '\bip\b'
+    category: red_conectividad
+    specialty: redes
+    level: N2
+
+  - name: red_caida
+    description: Caída de enlace, switch o wifi
+    patterns:
+      - 'sin internet'
+      - 'sin red'
+      - '\bwifi\b'
+      - 'wi-fi'
+      - 'switch'
+      - 'enlace'
+      - 'latencia'
+      - 'firewall'
+    category: red_conectividad
+    specialty: redes
+    level: N1
+
+  - name: base_de_datos
+    description: Incidentes de motores de base de datos
+    patterns:
+      - 'base de datos'
+      - 'postgres'
+      - 'sql server'
+      - '\bmysql\b'
+      - '\boracle\b'
+      - 'deadlock'
+      - 'query'
+      - 'consulta lenta'
+      - 'backup'
+    category: base_de_datos
+    specialty: bases_de_datos
+    level: N2
+
+  - name: servidor_linux
+    description: Servidores Linux, servicios y disco
+    patterns:
+      - '\blinux\b'
+      - 'ubuntu'
+      - '\brhel\b'
+      - 'debian'
+      - '\bssh\b'
+      - 'systemd'
+      - 'nginx'
+      - 'apache'
+      - 'disco lleno'
+      - 'cron'
+    category: servidores
+    specialty: linux
+    level: N2
+
+  - name: servidor_windows
+    description: Servidores Windows y servicios de dominio
+    patterns:
+      - 'windows server'
+      - 'controlador de dominio'
+      - '\biis\b'
+      - 'escritorio remoto'
+      - '\brdp\b'
+    category: servidores
+    specialty: windows
+    level: N2
+
+  - name: correo
+    description: Correo electrónico y calendario
+    patterns:
+      - 'correo'
+      - '\bmail\b'
+      - 'outlook'
+      - 'buzon'
+      - 'exchange'
+      - 'calendario'
+    category: correo
+    specialty: aplicaciones
+    level: N1
+
+  - name: impresion
+    description: Impresoras y escáneres
+    patterns:
+      - 'impresora'
+      - 'imprimir'
+      - 'impresion'
+      - 'escaner'
+      - 'toner'
+    category: impresion
+    specialty: windows
+    level: N1
+
+  - name: hardware
+    description: Equipos, periféricos y puestos de trabajo
+    patterns:
+      - 'notebook'
+      - 'monitor'
+      - 'teclado'
+      - 'mouse'
+      - 'no enciende'
+      - 'pantalla azul'
+      - 'bateria'
+    category: hardware
+    specialty: windows
+    level: N1
+
+  - name: aplicaciones_negocio
+    description: Sistemas internos (ERP, CRM, aplicaciones web)
+    patterns:
+      - '\berp\b'
+      - '\bcrm\b'
+      - '\bsap\b'
+      - 'sistema de facturacion'
+      - 'error 500'
+      - 'aplicacion'
+      - 'instalar'
+      - 'licencia'
+    category: software
+    specialty: aplicaciones
+    level: N1

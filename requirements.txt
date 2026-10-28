@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn>=0.30
+sqlalchemy>=2.0.36
+alembic>=1.16
+pydantic>=2.9
+pydantic-settings>=2.4
+PyJWT>=2.9
+PyYAML>=6.0.2
+APScheduler>=3.10,<4
+python-multipart>=0.0.9
+psycopg[binary]>=3.2
+tzdata>=2024.1

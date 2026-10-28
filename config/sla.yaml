@@ -1,0 +1,77 @@
+# Políticas de SLA y calendario hábil.
+# Los tiempos se expresan en minutos hábiles salvo que business_hours_only sea false (24x7).
+
+timezone: America/Argentina/Buenos_Aires
+
+business_hours:
+  start: "09:00"
+  end: "18:00"
+  # 0 = lunes ... 6 = domingo
+  workdays: [0, 1, 2, 3, 4]
+
+# Fracción del objetivo a partir de la cual se envía la advertencia
+warning_threshold: 0.75
+
+policies:
+  P1:
+    description: Crítico - servicio caído para muchos usuarios
+    first_response_minutes: 15
+    resolution_minutes: 240
+    business_hours_only: false
+  P2:
+    description: Alto - degradación importante o usuario clave sin servicio
+    first_response_minutes: 30
+    resolution_minutes: 480
+    business_hours_only: true
+  P3:
+    description: Medio - afecta a un usuario con alternativa disponible
+    first_response_minutes: 240
+    resolution_minutes: 1620
+    business_hours_only: true
+  P4:
+    description: Bajo - consultas y pedidos estándar
+    first_response_minutes: 480
+    resolution_minutes: 2700
+    business_hours_only: true
+
+# Feriados nacionales de Argentina (incluye días no laborables con fines turísticos).
+# Verificar cada año contra el calendario oficial publicado por el Gobierno.
+holidays:
+  - 2025-01-01
+  - 2025-03-03
+  - 2025-03-04
+  - 2025-03-24
+  - 2025-04-02
+  - 2025-04-18
+  - 2025-05-01
+  - 2025-05-02
+  - 2025-05-25
+  - 2025-06-16
+  - 2025-06-20
+  - 2025-07-09
+  - 2025-08-15
+  - 2025-08-17
+  - 2025-10-12
+  - 2025-11-21
+  - 2025-11-24
+  - 2025-12-08
+  - 2025-12-25
+  - 2026-01-01
+  - 2026-02-16
+  - 2026-02-17
+  - 2026-03-23
+  - 2026-03-24
+  - 2026-04-02
+  - 2026-04-03
+  - 2026-05-01
+  - 2026-05-25
+  - 2026-06-15
+  - 2026-06-20
+  - 2026-07-09
+  - 2026-07-10
+  - 2026-08-17
+  - 2026-10-12
+  - 2026-11-23
+  - 2026-12-07
+  - 2026-12-08
+  - 2026-12-25

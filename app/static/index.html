@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mesa de Ayuda SLA</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="topbar" hidden>
+    <div class="brand">Mesa de Ayuda <span>SLA</span></div>
+    <nav>
+      <a href="#/tickets" data-nav="tickets">Tickets</a>
+      <a href="#/new" data-nav="new">Nuevo ticket</a>
+      <a href="#/dashboard" data-nav="dashboard" data-staff>Métricas</a>
+    </nav>
+    <div class="user">
+      <a href="#/notifications" class="bell" title="Notificaciones">🔔 <span id="notif-count"></span></a>
+      <span id="user-name"></span>
+      <button class="link" id="logout">Salir</button>
+    </div>
+  </header>
+  <main id="view"></main>
+  <div id="toast" class="toast" hidden></div>
+</body>
+</html>
